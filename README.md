@@ -1,5 +1,4 @@
 #FOOD TRUCK
-#DESCRIPTION
-#Lesson LEARND
-#TECH USED
-# FoodTruckProject
+##DESCRIPTION
+##Lesson LEARND
+##FoodTruckProject
