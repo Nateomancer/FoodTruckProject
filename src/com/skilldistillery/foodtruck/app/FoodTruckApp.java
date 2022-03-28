@@ -11,8 +11,9 @@ public class FoodTruckApp {
 	// make array of objects
 	private FoodTruck[] trucks = new FoodTruck[5];
 	// The array is called trucks
-	// Food truck is the object
+	// Food truck is the class, or object datatype
 	// Trucks is the array with 5 slots
+	// truck will be the object in the array
 
 	/// ---------Main Method------------
 	public static void main(String[] args) {
@@ -61,7 +62,7 @@ public class FoodTruckApp {
 	}
 
 //Methods
-//Used to access non static refrences 
+//Used to access non static references 
 	private void run() {
 
 		// create scanner
@@ -72,12 +73,11 @@ public class FoodTruckApp {
 		for (int i = 0; i < 5; i++) {
 
 			// Get name of food truck from user
-			System.out.println("Please Enter Name of Food Truck, or Enter Q to quit.");
+			System.out.println("Please Enter Name of Food Truck, or Enter Q to Quit to Menu.");
 			String name = input.nextLine();
 
 			// Quits the program
 			if (name.toUpperCase().equals("Q")) {
-				input.close();
 				break;
 			} else {
 
@@ -87,7 +87,7 @@ public class FoodTruckApp {
 				// trucks[numFoodTrucks].setFoodTruckFoodType(input.nextLine());
 
 				// get user rating for for truck
-				System.out.println("Please Enter Rating for Food Truck.");
+				System.out.println("Please Enter Rating 1-10 for Food Truck.");
 				double rating = input.nextDouble();
 				input.nextLine();
 

@@ -10,21 +10,17 @@ public class FoodTruck {
 	private String foodTruckFoodType;
 	private double foodTruckRating;
 	private int foodTruckID;
-	private static int nextFoodTruckID = 1000;
+	private static int nextFoodTruckID = 1000;//Static variable for increments of foodTruckID;
 
 	// ------------------------CONSTRUCTORS----------------------
-	// DEFAULT CONTRUCTOR
-	// TODO: Default constructor??
-	// TODO:DOES IT NEED ANYTHING??
 
 	// DEFAULT CONSTRUCTOR
 	public FoodTruck() {
 		// super();
 	}
 
-	// MAIN CONTRUCTORS
+	// MAIN CONTRUCTOR
 	// OVERLOADED
-	// STAYS PUBLIC
 	public FoodTruck(String foodTruckName, String foodTruckFoodType, double foodTruckRating) {
 		// super();
 		this.foodTruckName = foodTruckName;
@@ -64,18 +60,19 @@ public class FoodTruck {
 
 	// ----------------TOSTRINGS----------------
 
-	// TODO: Create TOSTRING
 	// TO STRING
 	// OUTPUT INFO ON FOOD TRUCK OBJECT
 	public String toString() {
-		return "Food Truck: " + foodTruckName + ", Food Type: " + foodTruckFoodType + ", Food Truck Rating: "
+		return "Food Truck: " + foodTruckName + " Food Type: " + foodTruckFoodType + " Food Truck Rating: "
 				+ foodTruckRating + " Food Truck ID " + foodTruckID;
+
 	}
 
 	public void displayFoodTrucks() {
 		String foodTruckData = toString();
+		System.out.println("---------------------------------------------------------------------------------------");
 		System.out.println(foodTruckData);
-		System.out.println("");
+		System.out.println("---------------------------------------------------------------------------------------");
 	}
 
 }
